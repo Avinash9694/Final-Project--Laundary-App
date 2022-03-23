@@ -1,0 +1,93 @@
+.Alert-box{
+    position: absolute;
+    top: 315px;
+    left: 517px;
+    width: 415px;
+    height: 43px;
+    /* UI Properties */
+    background: #5861AE 0% 0% no-repeat padding-box;
+    border-radius: 2px 2px 1px 1px;
+    opacity: 1;
+
+}
+.Alert{
+    position: absolute;
+    top: 327px;
+    left: 539px;
+    width: 34px;
+    height: 19px;
+    text-align: left;
+    font: normal normal 600 14px Open Sans;
+    letter-spacing: 0.34px;
+    color: #FFFFFF;
+    opacity: 1;
+
+}
+.Proceed-box{
+    position:absolute;
+    top: 459px;
+    left: 671px;
+    width: 107px;
+    height: 32px;
+    /* UI Properties */
+    background: #5861AE 0% 0% no-repeat padding-box;
+    border: 1px solid #5861AE;
+    border-radius: 4px;
+    opacity: 1;
+
+}
+.Proceed{
+    position:absolute;
+    top: 466px;
+    left: 697px;
+    width: 55px;
+    height: 19px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 600 14px Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.Text{
+    position:absolute;
+    top: 393px;
+    left: 616px;
+    width: 218px;
+    height: 38px;
+    /* UI Properties */
+    text-align: center;
+    letter-spacing: 0.34px;
+    opacity: 1;
+
+}
+.Alert-icon{
+    position:absolute;
+    top: 413px;
+    left: 554px;
+    width: 34px;
+    height: 30px;
+    /* UI Properties */   
+    opacity: 1;
+}
+
+Link{
+    text-decoration: none;
+}
+.x{
+    position:absolute;
+    top: 332px;
+    left: 898px;
+    width: 14px;
+    height: 14px;
+    color:#FFFFFF;
+    opacity: 1;
+}
+.alert-white-box{
+    position: absolute;
+    top:358px;
+    height:167px;
+    left: 517px;
+    width:415px;
+    background-color: #FFFFFF;
+}

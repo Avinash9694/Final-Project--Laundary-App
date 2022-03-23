@@ -3,7 +3,9 @@ import React from 'react';
 // import axios from 'axios';
 // import {Link} from 'react-router-dom';
 import OrderHistory from './components/OrderHistory';
-// import summary from './components/summary';
+import Create from './components/create';
+import Alert from './components/Alert';
+import Summary from './components/Summary';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const Apps=()=> {
@@ -22,7 +24,10 @@ const Apps=()=> {
     <div className="App">
       <Routes>
         <Route path="/" exact element={<OrderHistory />} />
-        <Route path="/confirm" element={<summary />} />
+        <Route path="/view"  element={<Summary />}/>
+        <Route path="/create"  element={<Create />}/>
+        <Route path="/cancel" element={<Alert />} />
+        <Route path="/Proceed" element={<OrderHistory />} />
       </Routes>
     </div>
   </Router>

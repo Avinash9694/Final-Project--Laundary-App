@@ -27,6 +27,7 @@ const Register = () => {
     })
     const data=await res.json()
     if(data.status===400 || !data){
+      
       window.alert("user already exist")
       console.log("user alreadyexist")
     }else{

@@ -9,6 +9,7 @@ const Footer=()=>{
             </div>
             <div className="footerbox2">
                     <h6 className="about">ABOUT US</h6>
+                    
                     <p className="about1">Doorstep Wash &amp; Dryclean Service</p>
                     <h6 className="information1">Home</h6>
                     <p className="information2">Sign In</p>

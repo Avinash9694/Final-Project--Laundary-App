@@ -1,38 +1,861 @@
-.App {
-  text-align: center;
+.homepage{
+ /* Layout Properties */
+position:relative;  
+top: 0px;
+left: 0px;
+width:100%;
+height: 1172px;
+display: flex;
+flex-direction: column;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+opacity: 1;
 }
+/*-------------------------------------Navbar---------------------------------------------------------*/
+.navbar{
+  /* Layout Properties */
+display: flex;
+flex-direction: row;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+width: 1440px;
+height: 80px;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 2px 48px #0000000F;
+opacity: 1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.laundry{
+  /* Layout Properties */
+width: 108px;
+height: 27px;
+position: relative;  
+top: 30px;
+left: 119px;
+/* UI Properties */
+text-align: left;
+text-align: center;
+font: normal normal 900 20px/27px Avenir;
+letter-spacing: 1.8px;
+color: #5861AE;
+text-transform: uppercase;
+opacity: 1;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.laundrytext{
+  margin:0px;
+}
+.headercontents{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.home{
+  position: absolute;
+  top: 34px;
+  left: 1021px;
+  width: 42px;
+  height: 19px;
+  z-index:1;
+  /* UI Properties */
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  font: normal normal normal 14px/19px Avenir;
+  letter-spacing: 1.05px;
+  color: #565657;
+  text-transform: capitalize;
+  opacity: 1;
+  
+}
+.pricing{
+width: 48px;
+height: 19px;
+/* Layout Properties */
+position: absolute;
+top: 34px;
+left: 1135px;
+z-index:1;
+/* UI Properties */
+text-decoration: none;
+list-style: none;
+text-align: center;
+font: normal normal normal 14px/19px Avenir;
+letter-spacing: 1.05px;
+color: #565657;
+text-transform: capitalize;
+opacity: 1;
+}
+.career{
+width: 46px;
+height: 19px;
+/* Layout Properties */
+position:absolute;
+top: 34px;
+left: 1250px;
+z-index:1;
+/* UI Properties */
+text-decoration: none;
+list-style: none;
+text-align: center;
+font: normal normal normal 14px/19px Avenir;
+letter-spacing: 1.05px;
+color: #565657;
+text-transform: capitalize;
+opacity: 1;
+}
+.signin{
+  /*Layout properties */
+  width: 50px;
+  height:19px;
+  position: absolute;
+  top:34px;
+  left: 1359px;
+  z-index: 1;
+  /* UI Properties */
+  text-decoration: none;
+list-style: none;
+  text-align: center;
+  color: #565657;
+  font: normal normal medium 14px/19px Avenir;
+  letter-spacing: 1.05px;
+  text-transform: capitalize;
+  opacity: 1;
+}
+hr{
+  /* Layout Properties */
+position:absolute;
+top: 0px;
+left:1328px;  
+width: 113px;
+height: 80px;
+transition: 1s ease-in-out;
+margin: 0px;
+/* UI Properties */
+background: #5861AE 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+opacity: 1;
+}
+.home:hover~hr{
+  position:absolute;
+  top: 0px;
+  left:990px;
+  width: 113px;
+  height: 80px;
+  }
+.signin:hover~hr{
+  position:absolute;
+  top: 0px;
+  left:1328px;
+  width: 113px;
+  height: 80px;
+
+}
+.career:hover~hr{
+  position:absolute;
+  top: 0px;
+  left:1219px;
+  width: 113px;
+  height: 80px;
+}
+.pricing:hover~hr{
+  position:absolute;
+  top: 0px;
+  left:1104px;
+  width: 113px;
+  height: 80px;
+
+}  
+/*----------------------------------------------SIGN IN--------------------------------------*/
+.signinpage{
+  display: flex;
+}
+.signindetails{
+  /* Layout Properties */
+position:absolute;  
+top: 81px;
+left: 730px;
+width: 710px;
+height: 769px;
+margin: 0px;
+/* UI Properties */
+background: #B9C0FD1A 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.email{
+  border:none;
+  border-bottom: 1px solid black;
+}
+.password{
+  border:none;
+  border-bottom: 1px solid black;
+}
+.signintext{
+  /* Layout Properties */
+position:relative;  
+top: 182px;
+left: 130px;
+width: 128px;
+height: 44px;
+/* UI Properties */
+text-align: left;
+font: normal normal medium 32px/60px Avenir;
+letter-spacing: 1.28px;
+color: #4552C1;
+text-transform: uppercase;
+opacity: 1;
+}
+.email{
+  /* Layout Properties */
+position: absolute;  
+top: 299px;
+left: 135px;
+width: 322px;
+height: 27px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 17px/27px Open Sans;
+letter-spacing: 0.6px;
+color: #77838F;
+opacity: 1;
+}
+.password{
+  /* Layout Properties */
+position: absolute;  
+top: 400px;
+left:135px;
+width: 322px;
+height: 27px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 17px/27px Open Sans;
+letter-spacing: 0.6px;
+color: #77838F;
+opacity: 1;
+}
+.forgotpassword{
+  /* Layout Properties */
+position: absolute;  
+top: 440px;
+left: 386px;
+width: 140px;
+height: 22px;
+/* UI Properties */
+text-align: left;
+font: normal normal medium 16px/26px Avenir;
+letter-spacing: 0.64px;
+color: #4552C1;
+text-transform: capitalize;
+opacity: 1;
+}
+.signinbtn{
+  /* Layout Properties */
+position: absolute;  
+top: 530.5px;
+left: 242.54px;
+width: 150px;
+height: 50px;
+/* UI Properties */
+background: #4552C1 0% 0% no-repeat padding-box;
+border-radius: 4px;
+opacity: 1;
+}
+.laundryservice{
+  /* Layout Properties */
+position: absolute;  
+top:149.5px;
+left: 152px;
+width: 411px;
+height: 257px;
+/* UI Properties */
+text-align: left;
+font: normal normal 900 100px/120px Avenir;
+letter-spacing: 0px;
+color: #5861AE;
+text-transform: capitalize;
+opacity: 1;
+}
+.doorstep{
+  /* Layout Properties */
+position:absolute;  
+top:440px;
+left: 151px;
+width: 335px;
+height: 27px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 20px/26px Avenir;
+letter-spacing: 0.8px;
+color: #565657;
+text-transform: capitalize;
+opacity: 1;
+}
+.haventaccount{
+  /* Layout Properties */
+position: absolute;  
+top: 522px;
+left: 152px;
+width: 189px;
+height: 22px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 16px/26px Avenir;
+letter-spacing: 0.64px;
+color: #565657;
+text-transform: capitalize;
+opacity: 1;
+}
+.registerbtn{
+  /* Layout Properties */
+position: absolute;  
+top: 570px;
+left: 152px;
+width: 150px;
+height: 50px;
+/* UI Properties */
+border: 2px solid #4552C1;
+border-radius: 4px;
+opacity: 1;
+}
+.passwordpadlock{
+  /* Layout Properties */
+position: absolute;  
+top: 389px;
+left: 450px;
+width: 15px;
+height: 21px;
+/* UI Properties */
+background: transparent url('./images/padlock.svg') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+/*--------------------------------REGISTER FORM------------------------------------------*/
+.registerdetails{
+  /* Layout Properties */
+position: absolute;  
+top: 81px;
+left: 402px;
+width: 1038px;
+height: 766px;
+/*border:1px solid black;*/
+/* UI Properties */
+background: #F8F9FF 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.name,.regemail,.phone,.regpassword,.state,.district,.address,.pincode{
+  border:0px;
+  border-bottom: 1px solid black;
+}
+.registertext{
+  /* Layout Properties */
+position: absolute;  
+top: 45px;
+left: 63px;
+width: 157px;
+height: 44px;
+/* UI Properties */
+text-align: left;
+font: normal normal medium 32px/60px Avenir;
+letter-spacing: 1.28px;
+color: #5861AE;
+text-transform: uppercase;
+opacity: 1;
+}
+.name{
+  /* Layout Properties */
+position: absolute;  
+top: 139px;
+left:68.5px;
+width: 322px;
+height: 27px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 17px/27px Open Sans;
+letter-spacing: 0.6px;
+color: #77838F;
+opacity: 1;
+}
+.regemail{
+  /* Layout Properties */
+position: absolute;  
+top: 139px;
+left: 568.5px;
+width: 322px;
+height: 27px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 17px/27px Open Sans;
+letter-spacing: 0.6px;
+color: #77838F;
+opacity: 1;
+}
+.phone{
+  /* Layout Properties */
+position: absolute;  
+top:236px;
+left: 66.5px;
+width: 322px;
+height: 27px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 17px/27px Open Sans;
+letter-spacing: 0.6px;
+color: #77838F;
+opacity: 1;
+}
+.regpassword{
+  /* Layout Properties */
+  position: absolute;  
+  top: 236px;
+  left: 568.5px;
+  width: 322px;
+  height: 27px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 17px/27px Open Sans;
+  letter-spacing: 0.6px;
+  color: #77838F;
+  opacity: 1;
+}
+.district{
+  /* Layout Properties */
+position: absolute;  
+top: 333px;
+left: 68.5px;
+width: 322px;
+height: 27px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 17px/27px Open Sans;
+letter-spacing: 0.6px;
+color: #77838F;
+opacity: 1;
+}
+.state{
+  /* Layout Properties */
+position: absolute;  
+top: 333px;
+left: 568.5px;
+width: 322px;
+height: 27px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 17px/27px Open Sans;
+letter-spacing: 0.6px;
+color: #77838F;
+opacity: 1;
+}
+.pincode{
+  /* Layout Properties */
+position: absolute;  
+top: 429px;
+left: 68.5px;
+width: 322px;
+height: 27px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 17px/27px Open Sans;
+letter-spacing: 0.6px;
+color: #77838F;
+opacity: 1;
+}
+.address{
+  /* Layout Properties */
+position: absolute;  
+top:429px;
+left: 568.5px;
+width: 322px;
+height: 27px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 17px/27px Open Sans;
+letter-spacing: 0.6px;
+color: #77838F;
+opacity: 1;
+}
+.box{
+  /* Layout Properties */
+position: absolute;  
+top:500px;
+left: 218px;
+width: 22px;
+height: 22px;
+/* UI Properties */
+/*background: transparent url('img/CD.png') 0% 0% no-repeat padding-box;*/
+border: 1px solid #707070;
+border-radius: 3px;
+opacity: 1;
+}
+.label{
+  /* Layout Properties */
+position: absolute;  
+top: 500px;
+left: 252px;
+width: 566px;
+height: 22px;
+/* UI Properties */
+text-align: left;
+text-decoration: underline;
+font: normal normal normal 14px/20px Open Sans;
+letter-spacing: 0.49px;
+color: #5861AE;
+opacity: 1;
+}
+.regregisterbtn{
+  /* Layout Properties */
+position: absolute;  
+top: 580.5px;
+left: 437.25px;
+width: 150px;
+height: 50px;
+/* UI Properties */
+background: #5861AE 0% 0% no-repeat padding-box;
+border-radius: 4px;
+opacity: 1;
+}
+.reglaundryservice{
+  margin: 0px;
+  /* Layout Properties */
+position: absolute;  
+top: 280px;
+left: 69px;
+width: 284px;
+height: 197px;
+/* UI Properties */
+text-align: left;
+font: normal normal 900 62px/80px Avenir;
+letter-spacing: 2.48px;
+color: #5861AE;
+text-transform: capitalize;
+opacity: 1;
+}
+.regdoorstep{
+  /* Layout Properties */
+position: absolute;  
+top: 440px;
+left: 72px;
+width: 175px;
+height: 59px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 20px/32px Avenir;
+letter-spacing: 0.8px;
+color: #565657;
+text-transform: capitalize;
+opacity: 1;
+}
+.reghaveaccount{
+  /* Layout Properties */
+position: absolute;  
+top: 550px;
+left: 72px;
+width: 171px;
+height: 22px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 16px/26px Avenir;
+letter-spacing: 0.64px;
+color: #565657;
+text-transform: capitalize;
+opacity: 1;
+}
+.regsigninbtn{
+  /* Layout Properties */
+position: absolute;  
+top:650px;
+left: 69px;
+width: 150px;
+height: 50px;
+/* UI Properties */
+border: 2px solid #5861AE;
+border-radius: 4px;
+opacity: 1;
+}
+.statearrow{
+position:absolute;  
+top:340px;
+left:900px;
+width: 15px;
+height: 9px;
+/* UI Properties */
+background: transparent url('./images/downarrow.svg') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.districtarrow{
+  /* Layout Properties */
+position: absolute;  
+top:342px;
+left: 410px;
+width: 15px;
+height: 9px;
+/* UI Properties */
+background: transparent url('./images/downarrow.svg') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+/*---------------------------------------------FOOTER-----------------------------------------------*/
+.footer{
+position: absolute;
+top: 768px;
+left: 0px;
+width: 1440px;
+height:280x;
+border-top: 1px solid black;
+/* UI Properties */
+background: #F8F9FF 0% 0% no-repeat padding-box;
+box-shadow: 0px -3px 6px #0000000B;
+opacity: 1;
+}
+.footerbox1{
+position: absolute;
+top:0px;
+left: 0px;
+width: 1440px;
+height:80px;
+/* UI Properties */
+background: #F8F9FF 0% 0% no-repeat padding-box;
+box-shadow: 0px -3px 6px #0000000B;
+opacity: 1;
+}
+.message{
+  /* Layout Properties */
+margin:0px;  
+position: absolute;  
+top:14px;
+left: 463px;
+width: 519px;
+height: 33px;
+/* UI Properties */
+text-align: left;
+font: normal normal 600 24px/26px Open Sans;
+letter-spacing: 0.96px;
+color: #5861AE;
+opacity: 1;
+}
+.condition{
+margin:0px;
+position: absolute;
+top:54px;
+left: 613px;
+width: 183px;
+height: 14px;
+/* UI Properties */
+text-align: left;
+font: italic normal normal 10px/26px Open Sans;
+letter-spacing: 0.4px;
+color: #3D3D43;
+opacity: 1;
+}
+.about{
+position: absolute;  
+top:120px;
+left: 137px;
+width: 90px;
+height: 25px;
+/* UI Properties */
+text-align: center;
+font: normal normal medium 18px/24px Avenir;
+letter-spacing: 0.18px;
+color: #182838;
+text-transform: uppercase;
+opacity: 1;
+}
+.about1{
+position: absolute;  
+top:160px;
+left: 137px;
+width: 251px;
+height: 20px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 15px/20px Avenir;
+letter-spacing: 0.6px;
+color: #3D3D43;
+text-transform: capitalize;
+opacity: 1;
+}
+.information1{
+position: absolute;  
+top: 120px;
+left: 566px;
+width: 44px;
+height: 22px;
+/* UI Properties */
+text-align: center;
+font: normal normal medium 16px/24px Avenir;
+letter-spacing: 0.16px;
+color: #182838;
+text-transform: capitalize;
+opacity: 1;
+}
+.information2{
+position: absolute;  
+top: 157px;
+left: 566px;
+width: 44px;
+height: 19px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/24px Avenir;
+letter-spacing: 0.14px;
+color: #182838;
+text-transform: capitalize;
+opacity: 1;
+}
+.information3{
+  /* Layout Properties */
+position: absolute;  
+top: 196px;
+left: 566px;
+width: 52px;
+height: 19px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/24px Avenir;
+letter-spacing: 0.14px;
+color: #182838;
+text-transform: capitalize;
+opacity: 1;
+}
+.informationpricing1{
+position: absolute;  
+top:120px;
+left: 687px;
+width: 50px;
+height: 22px;
+/* UI Properties */
+text-align: center;
+font: normal normal medium 16px/24px Avenir;
+letter-spacing: 0.16px;
+color: #182838;
+text-transform: capitalize;
+opacity: 1;
+}
+.informationcareer{
+  /* Layout Properties */
+position: absolute;  
+top: 120px;
+left: 831px;
+width: 50px;
+height: 22px;
+/* UI Properties */
+text-align: center;
+font: normal normal medium 16px/24px Avenir;
+letter-spacing: 0.16px;
+color: #182838;
+text-transform: capitalize;
+opacity: 1;
+}
+.informationblogs{
+  /* Layout Properties */
+position: absolute;  
+top: 157px;
+left: 831px;
+width: 36px;
+height: 19px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/24px Avenir;
+letter-spacing: 0.14px;
+color: #182838;
+text-transform: capitalize;
+opacity: 1;
+}
+.informationcreate{
+  /* Layout Properties */
+position: absolute;  
+top:196px;
+left: 831px;
+width: 42px;
+height: 19px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/24px Avenir;
+letter-spacing: 0.14px;
+color: #182838;
+text-transform: capitalize;
+opacity: 1;
+}
+.informationcreate{
+  position: absolute;
+  top:196px;
+  left: 831px;
+  width: 42px;
+  height: 19px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 14px/24px Avenir;
+  letter-spacing: 0.14px;
+  color: #182838;
+  text-transform: capitalize;
+  opacity: 1;
+}
+.informationcontact{
+  position: absolute;
+top: 120px;
+left: 944px;
+width: 58px;
+height: 22px;
+/* UI Properties */
+text-align: center;
+font: normal normal medium 16px/24px Avenir;
+letter-spacing: 0.16px;
+color: #182838;
+text-transform: capitalize;
+opacity: 1
+}
+.informationmedia{
+position: absolute;  
+top:120px;
+left: 1105px;
+width: 130px;
+height: 25px;
+/* UI Properties */
+text-align: center;
+font: normal normal medium 18px/24px Avenir;
+letter-spacing: 0.18px;
+color: #182838;
+text-transform: uppercase;
+opacity: 1;
+}
+.facebook{
+position: absolute;  
+/* Layout Properties */
+top: 180px;
+left: 1109px;
+width: 20px;
+height: 20px;
+/* UI Properties */
+background: transparent url('./images/facebook.svg') 0% 0% no-repeat padding-box;
+opacity: 0.6;
+}
+.instagram{
+  /* Layout Properties */
+position: absolute;  
+top: 180px;
+left: 1149px;
+width: 20px;
+height: 20px;
+/* UI Properties */
+background: transparent url('./images/instagram.svg') 0% 0% no-repeat padding-box;
+opacity: 0.6;
+}
+.linkedin{
+position: absolute;  
+top: 180px;
+left: 1189px;
+width: 18px;
+height: 18px;
+/* UI Properties */
+background: transparent url('./images/linkedin.svg') 0% 0% no-repeat padding-box;
+opacity: 0.6;
+}
+.footerout{
+  /* Layout Properties */
+position: absolute;  
+top: 300px;
+left: 0px;
+width: 1440px;
+height: 50px;
+text-align: center;
+color: #FFFFFF;
+/* UI Properties */
+background: #182838 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

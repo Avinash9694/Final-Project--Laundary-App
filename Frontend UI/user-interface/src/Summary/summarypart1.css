@@ -1,0 +1,129 @@
+ .summaryone1{
+    position: absolute;
+    top: -10px;
+left: 161px;
+/* width: 926px; */
+height: 933px;
+/* border: 2px solid black; */
+/* background: #FFFFFF 0% 0% no-repeat padding-box; */
+/* opacity: 1; */
+} 
+.summaryone{
+     margin-top: 10px;
+     width: 926px;
+     height: 933px;
+    background-color: #fff;
+     margin-left: 514px;
+}
+.summaryheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color:#5861AE;
+    z-index: 1;
+}
+.summaryheader button{
+    border: none;
+    color: #fff;
+    background-color: #5861AE;
+}
+.summaryheader h4{
+    color: #fff;
+}
+.storedetails101{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.storedetails202{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+.summarysecondheader{
+    background: #F4F9FF 0% 0% no-repeat padding-box;
+}
+.row-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+.orderamount{
+    float:right
+}
+.ordertotalamount{
+    background-color: #5861AE;
+    float:right
+}
+.orderdetails101{
+    margin-left: 30px;
+}
+.ordersummry101{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+.sumtotals{
+    text-align: right;
+    margin-right: 30px;
+}
+.Total{
+    background-color: #5861AE;
+    padding: 5px;
+}
+.addressicons{
+    display:flex;
+}
+.address101{
+    border: 1px solid #5861AE;
+    margin-left: 10px;
+    padding: 5px;
+}
+.confirm-btn1{
+    float: right;
+    margin-right: 30px;
+    width: 150px;
+height: 42px;
+    margin-bottom: 30px;
+    font: normal normal bold 16px Open Sans;
+    background: #5861AE 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    color: #fff;
+}
+.Total p{
+    color:#fff;
+} 
+bottom-123{
+    top: 861px;
+left: 514px;
+width: 926px;
+height: 70px;
+background: #F4F4F4 0% 0% no-repeat padding-box;
+box-shadow: 0px -3px 6px #00000015;
+opacity: 1;
+}
+.addre-4{
+    margin-left: 20px;
+}
+.addnew-12{
+    top: 641px;
+ margin-left: 1072px;
+width: 87px;
+height: 24px;
+/* UI Properties */
+text-align: left;
+font: normal normal bold 18px Open Sans;
+letter-spacing: 0.18px;
+color: #5861AE;
+opacity: 1;
+}

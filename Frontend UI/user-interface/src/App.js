@@ -1,7 +1,9 @@
 import './App.css';
 import React from 'react';
-// import axios from 'axios';
-// import {Link} from 'react-router-dom';
+import Navbar from "./components/Navbar.js";
+import Footer from "./components/footer.js";
+import SignIn from "./components/Sign In.js";
+import Register from "./components/Register.js";
 import OrderHistory from './components/OrderHistory';
 import Create from './components/create';
 import Alert from './components/Alert';
@@ -9,16 +11,7 @@ import Summary from './components/Summary';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const Apps=()=> {
-  // React.useEffect(() => {
-  //   let email = "avinash@gmail.com";
-  //   let password = "avinash1234"
-  //   axios.get(`http://localhost:5000/user/signin?emailId=${email}&password=${password}`)
-  //   .then(res => {
-  //     console.log("RESPONSE -> ", res);
-  //   })
-  // });
-
-  return (
+    return (
     <div>
     <Router>
     <div className="App">
@@ -28,12 +21,12 @@ const Apps=()=> {
         <Route path="/create"  element={<Create />}/>
         <Route path="/cancel" element={<Alert />} />
         <Route path="/Proceed" element={<OrderHistory />} />
+        <Route path="/signin" element={SignIn}/>
+        <Route path="/signup" element={Register}/>
+        <Route path="/confirm" element={<summary />} />
       </Routes>
     </div>
   </Router>
-
-
-
 </div>
   );
 };

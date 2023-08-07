@@ -1,16 +1,30 @@
 const mongoose=require("mongoose");
 const express = require("express");
+const bodyparser = require('body-parser')
+const cors = require('cors');
 const app = express();
-const bcrypt = require('bcrypt');
+app.use(bodyparser());
+app.use(cors());
 app.use(express.json())
+const bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken')
 const Registeruser=require("./models/user.js")
 const middleware=require("./middleware.js")
-mongoose.connect("mongodb+srv://avinash:Avinash123@cluster0.cyjm1.mongodb.net/Database1?retryWrites=true&w=majority").then(()=>console.log("db connected"))
-//Registration
+
+const SECRET = "RESTAPI";
+
+mongoose.connect("mongodb+srv://avinash:Avinash123@cluster0.cyjm1.mongodb.net/Database1?retryWrites=true&w=majority")
+.then(()=>console.log("db connected"));
+
+
+const loginRoutes = require("./router/login")
+const orderRoutes = require("./router/pastOrder")
+const registerRoutes = require("./router/register")
+
+
 app.post('/register',async (req,res)=>{
     console.log(req.body)
-   // const {username,email,password,confirmpassword}=req.body
+  
     try{
         const {Name,Email,Password,Phone,State,Address,Pincode,Distric}=req.body
         const exist= await Registeruser.findOne({$or:[{Email},{Phone}]})
@@ -18,7 +32,7 @@ app.post('/register',async (req,res)=>{
             return res.status(400).send("user Already exist")
         }
         bcrypt.hash(Password,10, async function(err, hash) {
-            // Store hash in your password DB.
+            
             if(err){
                 return res.status(400).send("hash failed")
             }
@@ -50,16 +64,14 @@ app.post('/signin',async (req,res)=>{
     const {Email,Password}=req.body;
     try{
         const {Email,Password,Phone}=req.body;
-        //const exist=await Registeruser.findOne({Email});
+        
         const exist=await Registeruser.findOne({$or:[{Email},{Phone}]});
 
-        //const exists=await Registeruser.findOne({Phone})
+       
         if(!exist){
          res.status(400).send("User not found")
         }
-        //else if(!exists){
-          //  res.status(400).send("User not found")
-           //}
+        /
         bcrypt.compare(Password, exist.Password).then(function(result) {
             if (result){
                 let payload={
@@ -86,4 +98,33 @@ app.post('/signin',async (req,res)=>{
     }catch(err){
         return res.status(400).send("password hashin wrong")}
 })
+
+
+app.use("/orderDetails",(req,res,next)=>{
+    var token = req.headers.authorization.split("test ")[1];
+    if(!token){
+        return res.status(401).json({
+            status:"failed",
+            message:"Token is missing"
+        })
+    }
+    jwt.verify(token, SECRET,(err,decoded)=>{ 
+        if(err){
+            return res.status(401).json({
+                status:"failed",
+                message:err.message
+            })
+        }
+        else{
+            req.user = decoded.data
+            next();
+        }
+    })
+  })
+  
+  app.use("/",loginRoutes)
+  app.use("/",registerRoutes)
+  app.use("/",orderRoutes)
+  
 app.listen(5000,()=>console.log("server started"))
+

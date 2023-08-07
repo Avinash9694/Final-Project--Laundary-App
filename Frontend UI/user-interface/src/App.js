@@ -5,6 +5,9 @@ import Footer from "./components/footer.js";
 import SignIn from "./components/Sign In.js";
 import Register from "./components/Register.js";
 import OrderHistory from './components/OrderHistory';
+import Create from './components/create';
+import Alert from './components/Alert';
+import Summary from './components/Summary';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const Apps=()=> {
@@ -14,15 +17,16 @@ const Apps=()=> {
     <div className="App">
       <Routes>
         <Route path="/" exact element={<OrderHistory />} />
+        <Route path="/view"  element={<Summary />}/>
+        <Route path="/create"  element={<Create />}/>
+        <Route path="/cancel" element={<Alert />} />
+        <Route path="/Proceed" element={<OrderHistory />} />
         <Route path="/signin" element={SignIn}/>
         <Route path="/signup" element={Register}/>
         <Route path="/confirm" element={<summary />} />
       </Routes>
     </div>
   </Router>
-
-
-
 </div>
   );
 };

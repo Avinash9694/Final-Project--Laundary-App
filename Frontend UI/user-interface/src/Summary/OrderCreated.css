@@ -1,0 +1,195 @@
+.ordershome{
+    width:100%;
+}
+.sidenav{
+    display:flex;
+    flex-direction: column;
+    background-color: #5861AE;
+    width:60px;
+    height: 700px;
+}
+.mainbody1{
+    display: flex;
+    margin-left: 20px;
+    flex-direction: row;
+}
+.orderingtable1{
+    top: 177px;
+ margin-left: 70px;
+ width: 1295px;
+ height: 628px;
+}
+.ordersearchbar1{
+    border: none;
+    border-bottom: 1px solid #5861AE;
+    background-color:#FFFFFF;
+    width:130px;
+    font-size: 20px;
+    margin-left: 900px;
+    margin-top:20px;
+}
+.orderscountandsearch{
+    display: flex;
+    align-items: center;
+    padding-left:50px;
+    padding-right: 80px;
+}
+.orderscountandsearch h3{
+    font: normal normal 600 18px/48px Open Sans;
+    letter-spacing: 0px;
+    color: #1E2022;
+    opacity: 1;
+}
+
+.orderingtableheadingsrow{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #FFFFFF;
+}
+.orderingtableheadingsrow h3{
+    text-align: left;
+    font: normal normal 700 20px/48px Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.orderingtableheadings{
+    background-color: #1E2022;
+    margin-left: 20px;
+    margin-right:20px;
+}
+.proceedandcancelbtn{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.proceedbtn{
+    position: absolute;
+    top: 823px;
+    left: 1296px;
+    width: 107px;
+    height: 32px;
+    text-align: center;
+    /* UI Properties */
+    background: #5861AE 0% 0% no-repeat padding-box;
+    border: 1px solid #5861AE;
+    border-radius: 4px;
+    opacity: 1;
+}
+.proceedbtn101{
+    background: #5861AE 0% 0% no-repeat padding-box;
+    border: 1px solid #5861AE;
+    border-radius: 4px;
+    opacity: 1;
+    color: #FFFFFF;
+}
+.cancelbtn12{
+    position: absolute;
+    top: 823px;
+left: 1172px;
+width: 107px;
+height: 32px;
+/* UI Properties */
+border: 1px solid #5861AE;
+border-radius: 4px;
+opacity: 1;
+color: #5861AE;
+text-align: center;
+}
+/* .cancelbtn101{ 
+    border: 1px solid #5861AE;
+    border-radius: 4px;
+    font: normal normal 600 14px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #5861AE;
+    opacity: 1;
+} */
+.product-image{
+    margin-left: 10px;
+    height:50px;
+    width:50px;
+    padding-top: 10px;
+}
+.product1-shirts{
+    display:flex;
+}
+.productdescription{
+    padding-left: 5px;
+}
+.title1{
+    font: normal normal 600 18px/14px Open Sans;
+    letter-spacing: 0px;
+    margin-left: 40px;
+    color: #5861AE;
+    opacity: 1;
+}
+.description1{
+    font: normal normal normal 14px/14px Open Sans;
+    margin-left: 40px;
+    letter-spacing: 0px;
+    color: #76788B;
+    opacity: 1;
+}
+.row1 {
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-content: space-between;
+    font: normal normal 600 16px/48px Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    align-items: center;
+    padding-left:25px;
+    padding-right:25px;
+    background-color: #FFFFFF;
+    border: 0.5px solid #76788B;
+
+}
+.row2 {
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-content: space-between;
+    font: normal normal 600 16px/48px Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    align-items: center;
+    padding-left:25px;
+    padding-right:25px;
+    background-color: #FFFFFF;
+    border-bottom: 0.5px solid #76788B;
+    border-left: 0.5px solid #76788B;
+    border-right: 0.5px solid #76788B;
+
+}
+.inputquantity input{
+    width:50px;
+    border:1px solid black;
+    text-align: center;
+    padding: 0%;
+    border-radius: 2px;
+}
+.washtype img{
+    padding: 20px;
+}
+.price{
+    color: black;
+    margin-right: 30px;
+}
+.rest-btn{
+    border: 1px solid #5861AE;
+    border-radius: 4px;
+    width: 81px;
+    height: 32px;
+    font: normal normal 600 14px/24px Open Sans;
+    letter-spacing: 0px;
+    color: #5861AE;
+    opacity: 1;
+    margin-right: 20px;
+} 

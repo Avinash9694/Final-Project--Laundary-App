@@ -25,9 +25,9 @@ const Apps=()=> {
         <Route path="/create"  element={<Create />}/>
         <Route path="/cancel" element={<Alert />} />
         <Route path="/Proceed" element={<OrderHistory />} />
-        <Route path="/signin" element={SignIn}/>
-        <Route path="/signup" element={Register}/>
-        <Route path="/confirm" element={<summary />} />
+        <Route path="/signin" element={<SignIn/>}/>
+        <Route path="/signup" element={<Register/>}/>
+        <Route path="/confirm" element={<summary/>} />
       </Routes>
     </div>
   </Router>
